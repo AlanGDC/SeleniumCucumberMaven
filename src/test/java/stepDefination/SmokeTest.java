@@ -1,9 +1,10 @@
 package stepDefination;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
+
 
 import com.or.PageObjet.EmpireStrikesBackPage;
 import com.or.PageObjet.MainPage;
@@ -16,7 +17,7 @@ import cucumber.api.java.en.When;
 public class SmokeTest 
 {
 	
-	WebDriver driver = new FirefoxDriver();
+	WebDriver driver = firefoxHeadless.ffHeadless();
 		
 	@Given("^User located in wikipedia Page$")
 	public void user_located_in_wikipedia_Page() throws Throwable {

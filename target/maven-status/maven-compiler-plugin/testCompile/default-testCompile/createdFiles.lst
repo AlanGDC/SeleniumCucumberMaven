@@ -1,0 +1,6 @@
+stepDefination\firefoxHeadless.class
+stepDefination\SmokeTest.class
+stepDefination\App.class
+com\or\PageObjet\EmpireStrikesBackPage.class
+com\or\PageObjet\MainPage.class
+runner\TestRunner.class

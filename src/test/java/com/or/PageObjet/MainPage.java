@@ -25,10 +25,7 @@ public class MainPage {
 	           .until(ExpectedConditions.visibilityOfElementLocated(By.className(selectorName)));
 		   }
 		   
-		   private void waitForDriverReady() throws Error{    
-			   new WebDriverWait(driver, 20).until(
-				          webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
-		   }
+
 		   
 		
 		   private void waitForBycssSelector(String selectorName) throws Error{
