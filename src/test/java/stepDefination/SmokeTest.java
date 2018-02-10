@@ -22,7 +22,7 @@ public class SmokeTest
 	@Given("^User located in wikipedia Page$")
 	public void user_located_in_wikipedia_Page() throws Throwable {
 		driver.get("https://www.wikipedia.org/");
-	   
+	      System.out.println(driver.getTitle());	   
 	}
 				
 
@@ -35,7 +35,8 @@ public class SmokeTest
 							MainPage main = new MainPage(driver);
 							
 							main.searchForMovie("The Empire Strikes back");
-							
+						
+						      System.out.println(driver.getTitle());
 							
 					}					
 
@@ -48,7 +49,7 @@ public class SmokeTest
 							
 							moviePage.clickChangeLanguage();
 							
-							
+						      System.out.println(driver.getTitle());
 								
 					}								
 
