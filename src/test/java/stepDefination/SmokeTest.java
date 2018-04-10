@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 import com.or.PageObjet.EmpireStrikesBackPage;
+import com.or.PageObjet.LoginPage;
 import com.or.PageObjet.MainPage;
 
 import cucumber.api.PendingException;
@@ -60,7 +61,20 @@ public class SmokeTest
 					
 							Assert.assertEquals("https://es.wikipedia.org/wiki/Star_Wars:_Episode_V_-_The_Empire_Strikes_Back", driver.getCurrentUrl()); 
 							
-							
+							driver.get("https://iunigodev--dev.lightning.force.com/one/one.app#/sObject/001q000000m92EgAAI/view");
+
+							// driver.get("https://test.salesforce.com");
+
+							LoginPage login = new LoginPage(driver);
+
+							login.completeUser("duartea@sancristobal.com.ar.dev");
+							login.completePassword("Odioamoto1");
+
+
+
+							login.clickOnLogIn();
+
+							System.out.println(driver.getTitle());	
 					}											
 			
 			
