@@ -7,6 +7,6 @@ services:
 
 before_install:
   - docker build -t dockertest .
-  - docker run -it dockertest
+
 script:
-  - bundle exec rake test
+  - docker run -it dockertest
