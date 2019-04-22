@@ -5,8 +5,8 @@ WORKDIR /app
 RUN apt update && apt install -y firefox-esr \
     && wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux64.tar.gz \
     && tar -C /usr/bin/ -xvf geckodriver-v0.19.1-linux64.tar.gz && rm geckodriver-v0.19.1-linux64.tar.gz \
-    && wget https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central/firefox-60.0a1.en-US.linux-x86_64.tar.bz2 \
-    && tar -C /opt/ -xvf firefox-60.0a1.en-US.linux-x86_64.tar.bz2 \
+    && wget https://download-installer.cdn.mozilla.net/pub/firefox/nightly/latest-mozilla-central/firefox-68.0a1.en-US.linux-x86_64.tar.bz2 \
+    && tar -C /opt/ -xvf firefox-68.0a1.en-US.linux-x86_64.tar.bz2 \
     && rm /usr/bin/firefox && ln -s  /opt/firefox/firefox /usr/bin/firefox
 
 
